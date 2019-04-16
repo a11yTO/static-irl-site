@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: a11yIRL
 email: info@a11yto.com
-description: 
+description: "Accessibility In Real Life"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://IRL.a11yto.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: a11yTO
