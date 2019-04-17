@@ -90,6 +90,7 @@ a:focus,
 a:active {
   border-bottom: 0;
   color: #d44619;
+  outline: 2px solid $main-font-color;
 }
 a.current-page {
   border-bottom: 0;
@@ -146,7 +147,7 @@ header p.subtitle {
   position: relative;
 }
 .nav-menu a {
-  border: 0;
+  border  : 0;
   color: $main-font-color;
   padding: 10px 2px;
 }
