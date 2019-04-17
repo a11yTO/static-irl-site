@@ -1,5 +1,5 @@
 $main-font-color: #222222;
-$brand-color: #076800;
+$brand-color: #6C2E7D;
 $accent-color: #D34618;
 $background: #ffffff;
 $accent-background: #EDF5F8;
@@ -104,12 +104,12 @@ a.current-page {
 .event-branding {
   background: $background;
   border-bottom: 3px solid $accent-color;
-  padding: 24px 5%;
+  padding: 16px 5% 10px;
 }
 .branding {
   height: auto;
   padding-top: 4px;
-  width: 200px;
+  width: 180px;
 }
 .event-detail {
   width: 63%;
@@ -439,7 +439,7 @@ footer p {
 @media (max-width: 1180px) {
   h1 {
     font-size: 9.5vw;
-    margin: 8vw 0 6.5vw;
+    margin: 6vw 0 6.5vw;
   }
 /*
   p,
