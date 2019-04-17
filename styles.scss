@@ -91,7 +91,6 @@ a:active {
   border-bottom: 0;
   color: #d44619;
 }
-.site-header a.current-page,
 a.current-page {
   border-bottom: 0;
   color: #d44619;
@@ -147,8 +146,9 @@ header p.subtitle {
   position: relative;
 }
 .nav-menu a {
-  border-bottom: 2px solid #d44619;
+  border: 0;
   color: $main-font-color;
+  padding: 10px 2px;
 }
 .nav-menu a:hover,
 .nav-menu a:active,
