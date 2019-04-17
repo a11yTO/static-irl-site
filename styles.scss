@@ -135,7 +135,7 @@ header p.subtitle {
 /* nav */
 .main-navigation {
   float: right;
-  padding-bottom: 4px;
+  padding: 4px 0;
 }
 .nav-menu ul {
   margin: 0;
@@ -251,7 +251,7 @@ li {
   color: $main-font-color;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  line-height: 58px;
+  line-height: 70px;
 }
 .sponsors,
 .partners {
