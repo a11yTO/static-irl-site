@@ -169,6 +169,20 @@ header p.subtitle {
   border: 0;
   color: $background;
 }
+.buyTickets a {
+  background: $brand-color;
+  border-radius: 25px;
+  color: #fff !important;
+  font-weight: bold;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+.buyTickets a:hover,
+.buyTickets a:active,
+.buyTickets a:focus {
+  border: 0;
+  color: #fff;
+}
 
 /* sections */
 section {
