@@ -38,7 +38,7 @@ h1 {
   font-family: "League Spartan", "Open Sans", sans-serif;
   font-size: 138px;
   font-weight: 600;
-  margin: 100px 0 0;
+  margin: 60px 0 0;
   white-space: nowrap;
   letter-spacing: -0.03em;
 }
@@ -121,14 +121,12 @@ header p {
   margin: 0 auto;
   line-height: 60px;
 }
+header p.date {
+  padding: 60px 0 0;
+}
 header p.location {
   font-weight: 100;
-  padding-bottom: 100px;
-}
-header p.subtitle {
-  font-size: 48px;
-  margin: -10px 0 60px;
-  font-weight: 400;
+  padding: 0 0 100px;
 }
 
 /* nav */
@@ -452,7 +450,7 @@ footer p {
 
 @media (max-width: 1180px) {
   h1 {
-    font-size: 9.5vw;
+    font-size: 11.75vw;
     margin: 6vw 0 0;
   }
 /*
@@ -471,10 +469,12 @@ footer p {
     line-height: 5.8vw;
   }
 
+  header p.date {
+    padding: 0;
+  }
   header p.subtitle {
-    font-size: 3.5vw;
     line-height: 4.5vw;
-    padding: 1.5vw 0 0;
+    padding: 0 0 4vw;
   }
   .speakers header {
     min-height: auto;
