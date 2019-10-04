@@ -91,14 +91,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: $brand-color;
   font-family: $heading-font-stack;
-  font-size: $base-font-size*2;
+  font-size: $base-font-size*1.5;
   font-weight: 900;
   line-height: 1.1;
   margin: 0;
   position: relative;
 }
+.page-title {
+  font-size: $base-font-size*2;
+}
 .home .page-title {
-  font-size: $base-font-size*1.5;
+  font-size: $base-font-size*1.75;
 }
 .event {
   text-align: center;
@@ -124,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 .sub-head {
-  font-size: $base-font-size*1.25;
+  font-size: $base-font-size*1.15;
   font-weight: 600;
   margin: 1em 0 0;
 }
