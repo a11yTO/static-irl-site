@@ -500,6 +500,67 @@ button {
 }
 
 /* -------------------------------------------------------------------------
+* Playlist Styles
+* ------------------------------------------------------------------------- */
+.playlist-list {
+  border-left: 1px solid $brand-color;
+  padding: 0 1em;
+  list-style: none;
+}
+.playlist-list .session,
+.playlist-list p {
+  font-size: $base-font-size;
+  margin: 0;
+  position: relative;
+}
+.playlist-list li {
+  border: 0;
+  margin-bottom: 1.5em;
+}
+.playlist-list .session:before,
+.playlist-list .break:before,
+.playlist-list .lunch:before {
+  content: "";
+  position: absolute;
+  left: -1.3em;
+  display: inline-block;
+  width: 0.8em;
+  height: 16px;
+  border-radius: 50%;
+  top: 0.5em;
+  border: 1px solid $brand-color;
+  background-color: $brand-color;
+}
+.break:before,
+.lunch:before {
+  border: 1px solid $conf-brand-color;
+  background-color: $conf-brand-color;
+}
+.playlist-list h3 {
+  color: $brand-color;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.playlist-list .event:before {
+  content: " ";
+  display: block;
+}
+.playlist-list .time {
+  position: relative;
+}
+.playlist-list .speaker,
+.playlist-list .speakers {
+  display: block;
+}
+.playlist-list .break,
+.playlist-list .lunch {
+  color: #d44619;
+  font-size: $base-font-size;
+}
+
+/* -------------------------------------------------------------------------
 * Camp schedule table
 * ------------------------------------------------------------------------- */
 .tg  {
@@ -544,6 +605,21 @@ button {
 /* -------------------------------------------------------------------------
 * #a11yTO.com Branded Events structure & styles
 * ------------------------------------------------------------------------- */
+.a11yweekto-events {
+  margin-bottom: 1.5em;
+  h4 {
+    font-size: $base-font-size*1.75;
+    margin: 0.25em 0;
+  }
+  p {
+    margin: 0;
+  }
+  .more-info,
+  .tickets,
+  .location {
+    margin-bottom: 3em;
+  }
+}
 .branded-events {
   ul {
   list-style: none;
