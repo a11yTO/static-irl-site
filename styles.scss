@@ -527,7 +527,7 @@ button {
   width: 0.8em;
   height: 16px;
   border-radius: 50%;
-  top: 0.5em;
+  top: 0.25em;
   border: 1px solid $brand-color;
   background-color: $brand-color;
 }
@@ -556,7 +556,7 @@ button {
 }
 .playlist-list .break,
 .playlist-list .lunch {
-  color: #d44619;
+  color: $brand-color;
   font-size: $base-font-size;
 }
 
