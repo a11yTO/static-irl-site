@@ -31,7 +31,7 @@ $main-nav-wide-breakpoint: 58em;
 /* -------------------------------------------------------------------------
  * Global reset
  * ------------------------------------------------------------------------- */
- html {
+html {
   box-sizing: border-box;
 }
 *,
@@ -525,7 +525,7 @@ button {
   left: -1.3em;
   display: inline-block;
   width: 0.8em;
-  height: 16px;
+  height: 0.8em;
   border-radius: 50%;
   top: 0.2em;
   border: 1px solid $brand-color;
@@ -539,8 +539,8 @@ button {
 .playlist-list h3 {
   color: $brand-color;
   font-weight: 800;
-  line-height: 30px;
-  margin-bottom: 12px;
+  line-height: 1.6em;
+  margin-bottom: 0.67em;
   text-transform: capitalize;
 }
 .playlist-list .event:before {
