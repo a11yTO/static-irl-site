@@ -181,6 +181,7 @@ ol {
 a {
   border-bottom: $link-underline;
   color: $link-color;
+  line-height: 1.5;
   text-decoration: none;
   &:hover,
   &:active {
