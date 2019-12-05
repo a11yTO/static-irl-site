@@ -17,7 +17,7 @@ title: a11yIRL
 email: info@a11yto.com
 identifier: irl
 description: Accessibility In Real Life
-event-date: Wednesday, October 23, 2019
+event-date: Wednesday, October 21, 2020
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://IRL.a11yto.com/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
