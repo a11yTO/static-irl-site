@@ -178,12 +178,10 @@ ol {
 /* -------------------------------------------------------------------------
  * Link styles
  * ------------------------------------------------------------------------- */
-a {
+ a {
   border-bottom: $link-underline;
   color: $link-color;
-  line-height: 1.5;
   text-decoration: none;
-  &:hover,
   &:active {
     border: 0;
     color: $secondary-color;
@@ -194,17 +192,14 @@ a:focus {
   border: 0;
   outline: 2px solid black;
 }
-.current-page {
-  border: 0;
-  color: $secondary-color !important;
-  font-weight: bold;
-}
-
 .nav-menu {
   a {
     color: $main-font-color;
     border-bottom: 0;
     padding: 0.33em;
+  }
+  a.current-page {
+    border-bottom: $link-underline;
   }
   .tickets a {
     background: $brand-color;
@@ -215,9 +210,42 @@ a:focus {
     white-space: nowrap;
   }
 }
+a.current-page {
+  border: 0;
+  color: $secondary-color;
+  font-weight: bold;
+  &:focus {
+    border: 0;
+  }
+}
 .social-icons {
   a {
     padding: 0.75em 0.25em 0;
+  }
+}
+@supports (text-underline-offset: 0) {
+  a {
+    border: 0;
+    text-decoration-line: underline;
+    text-decoration-color: $brand-color;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3em;
+    text-decoration-skip-ink: none;
+  }
+  .nav-menu a,
+  .tickets a,
+  .branded-events a {
+    text-decoration-line: none;
+  }
+  a.current-page {
+    border: 0;
+    text-decoration-line: underline;
+  }
+  .nav-menu a.current-page {
+    border: 0;
+  }
+  footer a.current-page {
+    text-decoration-line: none;
   }
 }
  /* End link styles */
