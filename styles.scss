@@ -179,27 +179,24 @@ ol {
  * Link styles
  * ------------------------------------------------------------------------- */
  a {
-  border-bottom: $link-underline;
   color: $link-color;
-  text-decoration: none;
   &:active {
-    border: 0;
     color: $secondary-color;
   }
 }
 *:focus,
 a:focus {
-  border: 0;
   outline: 2px solid black;
+  text-decoration: none;
 }
-.nav-menu {
+.main-nav-menu {
   a {
     color: $main-font-color;
-    border-bottom: 0;
     padding: 0.33em;
+    text-decoration: none;
   }
   a.current-page {
-    border-bottom: $link-underline;
+    text-decoration: underline;
   }
   .tickets a {
     background: $brand-color;
@@ -211,12 +208,9 @@ a:focus {
   }
 }
 a.current-page {
-  border: 0;
   color: $secondary-color;
   font-weight: bold;
-  &:focus {
-    border: 0;
-  }
+  text-decoration: underline;
 }
 .social-icons {
   a {
@@ -225,54 +219,60 @@ a.current-page {
 }
 @supports (text-underline-offset: 0) {
   a {
-    border: 0;
     text-decoration-line: underline;
     text-decoration-color: $brand-color;
     text-decoration-thickness: 1px;
-    text-underline-offset: 0.3em;
-    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
   }
-  .nav-menu a,
+  .main-nav-menu a,
   .tickets a,
   .branded-events a {
     text-decoration-line: none;
   }
-  a.current-page {
-    border: 0;
-    text-decoration-line: underline;
-  }
-  .nav-menu a.current-page {
-    border: 0;
+  .main-nav-menu a.current-page {
+    text-decoration-color: $brand-color; 
   }
   footer a.current-page {
     text-decoration-line: none;
   }
+  .staged a {
+    color: $inverted-font-color;
+    text-decoration-color: $inverted-font-color;
+  }
 }
- /* End link styles */
+/* End link styles */
 
 /* -------------------------------------------------------------------------
  * Page structure & styles
  * ------------------------------------------------------------------------- */
-.site-header {
+ .site-header {
   background: $background;
   border-bottom: 3px solid $brand-color;
-  padding: 1em 5% 0.65em;
+  padding: 1.25em 5%;
   text-align: center;
 }
 .branding {
-  height: $logo-height;
-  padding: 0.33em 0;
-  width: auto;
+  font-size: $base-font-size;
 }
-.nav-menu {
-  margin: 0;
-  padding: 0;
-  li {
-    list-style: none;
-    margin: 0 0.25em 1em;
-  }
-  .tickets {
-    margin: 0.75em 0 1.75em;
+.branding-logo {
+  height: auto;
+  width: 12em;
+}
+.main-nav-menu {
+  margin: 0.25em 0 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0 0.25em 1em;
+    }
+    .tickets {
+      margin: 1.5em 0 1.75em;
+    }
+    .social {
+      margin: 0;
+    }
   }
 }
 .social-icons {
@@ -294,53 +294,64 @@ a.current-page {
 }
 @supports (flex-wrap: wrap) {
   .site-header {
-    text-align: center;
-  }
-  .nav-menu,
-  .social-icons {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
   }
-  .social-icons {
-    flex-direction: row;
-  }
-  @media screen and (min-width: $main-nav-mid-breakpoint) {
-    .nav-menu {
+  .main-nav-menu .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .tickets {
+      margin-top: 0.5em;
+    }
+    .social-icons {
+      display: flex;
       flex-direction: row;
       justify-content: center;
-      padding: 1em 0;
       li {
-        margin: 0 0.75em;
+        display: block;
+        margin-bottom: 0;
+        padding: 0 0.2em;
       }
+    }
+  }
+  @media screen and (min-width: $main-nav-mid-breakpoint) {
+    .site-header {
+      padding-bottom: 0.75em;
+    }
+    .branding {
+      padding-bottom: 0.75em;
+    }
+    .main-nav-menu .nav-list {
+      flex-direction: row;
       .tickets {
         margin: 0 0.5em;
       }
     }
     .social-icons {
       margin: 0;
-      li {
-        margin: 0 0.25em;
-      }
     }
   }
   @media screen and (min-width: $main-nav-wide-breakpoint) {
     .site-header {
-      text-align: left;
+      padding-bottom: 0.65em;
     }
-    .main-navigation {
-      float: right;
+    .branding {
+      padding: 0;
     }
-    .nav-menu {
-      justify-content: flex-end;
+    .site-header {
+      flex-direction: row;
+      justify-content: space-between;
+      .branding {
+        align-self: flex-start;
+      }
+      .main-nav-menu .nav-list {
+        margin: 0.75em 0;
+      }
     }
-    .irl .nav-menu {
-      padding: 1.8em 0;
+    .irl .main-nav-menu {
+      padding: 1.1em 0;
     }
   }
 }
@@ -714,7 +725,7 @@ button {
 /* -------------------------------------------------------------------------
  * Staged site structure & styles
  * ------------------------------------------------------------------------- */
-.staged {
+ .staged {
   background: black;
   color: $inverted-font-color;
   font-size: 75%;
@@ -725,10 +736,9 @@ button {
   width: 100%;
 }
 .staged a {
-  border-bottom: 1px solid white;
   color: $inverted-font-color;
 }
 .staged a:focus {
-  border: 0;
+  text-decoration: none;
   outline: 2px solid white;
 }
