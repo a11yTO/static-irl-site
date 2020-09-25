@@ -256,7 +256,7 @@ a.current-page {
 }
 .branding-logo {
   height: auto;
-  width: 12em;
+  width: 9.75em;
 }
 .main-nav-menu {
   margin: 0.25em 0 0;
@@ -334,9 +334,6 @@ a.current-page {
     }
   }
   @media screen and (min-width: $main-nav-wide-breakpoint) {
-    .site-header {
-      padding-bottom: 0.65em;
-    }
     .branding {
       padding: 0;
     }
@@ -350,8 +347,8 @@ a.current-page {
         margin: 0.75em 0;
       }
     }
-    .irl .main-nav-menu {
-      padding: 1.1em 0;
+    .irl .main-nav-menu .nav-list {
+      margin: 1.3em 0;
     }
   }
 }
