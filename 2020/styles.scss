@@ -721,29 +721,29 @@ button {
 /* End #a11yTO.com Branded Events structure & styles */
 
 /* -------------------------------------------------------------------------
- * Staged site structure & styles
+ * Attention banner structure & styles
  * ------------------------------------------------------------------------- */
- .staged,
  .attention {
-   background: black;
-   color: $inverted-font-color;
-   font-size: 75%;
-   line-height: 1.1;
-   margin: 0;
-   padding: 1em;
-   text-align: center;
-   width: 100%;
- }
- .attention {
-   background: $attention;
- }
- .staged a,
- .attention a {
-   color: $inverted-font-color;
-   text-decoration-color: $inverted-font-color;
- }
- .staged a:focus,
- .attention a:focus {
-   text-decoration: none;
-   outline: 2px solid white;
- }
+  background: black;
+  color: white;
+  font-size: 85%;
+  line-height: 1.1;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+.attention a {
+  color: white;
+  white-space: nowrap;
+}
+@supports (text-underline-offset: 0) {
+  .attention a {
+    text-decoration-color: white;
+  }
+}
+.attention a:focus {
+  text-decoration: none;  
+  outline: 2px solid white;
+}
