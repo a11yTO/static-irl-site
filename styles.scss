@@ -255,8 +255,10 @@ a.current-page {
   font-size: $base-font-size;
 }
 .branding-logo {
-  height: auto;
-  width: 9.75em;
+  color: $brand-color;
+  fill: $brand-color;
+  height: 4.13em;
+  width: auto;
 }
 .main-nav-menu {
   margin: 0.25em 0 0;
@@ -349,7 +351,7 @@ a.current-page {
       }
     }
     .irl .main-nav-menu .nav-list {
-      margin: 1.3em 0;
+      margin: 1em 0;
     }
   }
 }
