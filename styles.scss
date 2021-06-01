@@ -240,7 +240,7 @@ a[aria-current] {
 /* -------------------------------------------------------------------------
  * Page structure & styles
  * ------------------------------------------------------------------------- */
- .masthead {
+.masthead {
   background: $background;
   border-bottom: 3px solid $brand-color;
   padding: 1.25em 5%;
@@ -262,13 +262,16 @@ a[aria-current] {
     padding: 0;
     li {
       list-style: none;
-      margin: 0 0.25em 1em;
+      margin: 0 0.5em 1em;
     }
     .tickets {
       margin: 1.5em 0 1.75em;
     }
     .social {
       margin: 0;
+      li {
+        margin: 0 0.25em 1em;
+      }
     }
   }
 }
@@ -332,6 +335,9 @@ a[aria-current] {
     }
   }
   @media screen and (min-width: $main-nav-wide-breakpoint) {
+    .masthead {
+      padding-bottom: 0.65em;
+    }
     .branding {
       padding: 0;
     }
@@ -345,8 +351,8 @@ a[aria-current] {
         margin: 0.75em 0;
       }
     }
-    .irl .main-nav-menu .nav-list {
-      margin: 1em 0;
+    .irl .main-nav-menu {
+      padding: 0.4em 0;
     }
   }
 }
