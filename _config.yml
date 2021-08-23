@@ -17,7 +17,7 @@ title: a11yIRL
 email: info@a11yto.com
 identifier: irl
 description: Accessibility In Real Life
-event-date: October 21st, 2021 @ 6 EST
+event-date: October 21st, 2021 @ 6pm EST
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://IRL.a11yto.com/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
