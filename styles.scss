@@ -190,6 +190,7 @@ a:focus {
   position: absolute;
   top: 1em;
   left: -9999em;
+  z-index: 10000;
   &:focus {
     left: 1em;
     outline-offset: 0;
