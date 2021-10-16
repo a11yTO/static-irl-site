@@ -26,7 +26,7 @@ $link-underline: 2px solid $brand-color;
 $logo-height: 5.5em;
 
 $main-nav-mid-breakpoint: 43em;
-$main-nav-wide-breakpoint: 58em;
+$main-nav-wide-breakpoint: 64em;
 
 /* -------------------------------------------------------------------------
  * Global reset
@@ -588,7 +588,7 @@ button {
   padding: 0 1em;
   list-style: none;
 }
-.playlist-list .session,
+.playlist-list .session-time,
 .playlist-list p {
   font-size: $base-font-size;
   margin: 0;
@@ -598,7 +598,7 @@ button {
   border: 0;
   margin-bottom: 1.5em;
 }
-.playlist-list .session:before,
+.playlist-list .session-time:before,
 .playlist-list .break:before,
 .playlist-list .lunch:before {
   content: "";
@@ -608,9 +608,18 @@ button {
   width: 0.8em;
   height: 0.8em;
   border-radius: 50%;
-  top: 0.2em;
   border: 1px solid $brand-color;
   background-color: $brand-color;
+}
+.conf .playlist-list .session-time:before,
+.conf .playlist-list .break:before,
+.conf .playlist-list .lunch:before {
+  top: 0.45em;
+}
+.irl .playlist-list .session-time:before,
+.irl .playlist-list .break:before,
+.irl .playlist-list .lunch:before {
+  top: 0.2em;
 }
 .break:before,
 .lunch:before {
@@ -628,9 +637,6 @@ button {
   content: " ";
   display: block;
 }
-.playlist-list .time {
-  position: relative;
-}
 .playlist-list .speaker,
 .playlist-list .speakers {
   display: block;
@@ -639,6 +645,16 @@ button {
 .playlist-list .lunch {
   color: $brand-color;
   font-size: $base-font-size;
+}
+.speaker-list {
+  margin-left: -1em;
+}
+.speaker-list li,
+.talk h2 {
+  text-transform: capitalize;
+}
+.talk .no-caps {
+  text-transform: none;
 }
 
 /* -------------------------------------------------------------------------
