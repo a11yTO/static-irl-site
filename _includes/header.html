@@ -38,13 +38,13 @@
           <li>
             <a {% if page.id=='home' %}aria-current="page"{% endif %} href="/">Home</a>
           </li>
-          <li>
+          <!-- <li>
             <a {% if page.id=='playlist' %}aria-current="page"{% endif %} href="/playlist">Playlist</a>
           </li>
           <li>
             <a {% if page.id=='speakers' %}aria-current="page"{% endif %} href="/speakers">Speakers</a>
           </li>
-          <!-- <li class="tickets">
+          <li class="tickets">
             <a href="#" rel="external nofollow">Get Tickets</a>
           </li> -->
           <li class="social">
@@ -81,10 +81,10 @@
     <section class="event">
       <h1 class="event-title">#{{ site.title }}</h1>
       <p class="event-description">{{ site.description }}</p>
-      <ul class="event-detail">
+      <!-- <ul class="event-detail">
         <li class="event-date">{{ site.event-date }}</li>
         <li class="event-location">Location: Your Place!</li>
-      </ul>
+      </ul> -->
     </section>
     {% endif %}
   </header>
