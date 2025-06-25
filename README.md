@@ -1,4 +1,4 @@
-# #a11yTO Site README
+# #a11yIRL Site README
 
 We used [the simple and static benefits of Jekyll](https://jekyllrb.com/) to help manage our site. You'll need to have Jekyll installed on your computer to manipulate the site and see those changes locally. Installing Jekyll is relatively easy to do.
 
